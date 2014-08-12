@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+</head>
+<body>
+
+
+    <div id="item-list"></div>
+    <br />
+    item_name:<div id="item_name"></div>,item_value:<div id="item_value"></div>
+    <br />attr:<div id="attr"></div>
+    <br />
+    <br />
+    <button id="update_name">update_name</button>
+    <button id="update_value">update_value</button>
+    <button id="add">add</button>
+    <br />
+    <button id="undo">undo</button>
+    <button id="redo">redo</button>
+    <br />
+    <button id="item_button">item</button>
+    <button id="attr_button">attr</button>
+
+    <script id="template-item" type="text/html">
+        <button type="button">name=<%= name %>,value=<%= value %></button>
+    </script>
+
+
+
+    <script src="jquery-1.10.2.js"></script>
+    <script src="underscore.js"></script>
+    <script src="backbone.js"></script>
+    <script src="backbone.undo.js"></script>
+
+ 
+
+    <script src="app.js"></script>
+
+</body>
+</html>
